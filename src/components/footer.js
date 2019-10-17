@@ -2,19 +2,13 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const footerContainer = styled.footer`
+const FooterContainer = styled.footer`
     display: inline-flex;
-    width: 100%;
-    height: 15%;
-`;
-
-const Section = styled.section`
-    justify-content: space-around;
-`;
+`
 
 const Footer = () => {
     return (
-        <footerContainer>
+        <FooterContainer>
             <section>
                 <Link to='/contact'>Contact</Link>
             </section>
@@ -26,7 +20,7 @@ const Footer = () => {
             <section>
                 <Link to='/about'>About</Link>
             </section>
-        </footerContainer>
+        </FooterContainer>
     )
 };
 
