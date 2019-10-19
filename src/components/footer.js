@@ -22,6 +22,10 @@ const CopyrightParagraph = styled.p`
     display: inline;
 `
 
+const SectionLink = styled.a`
+    
+`
+
 const Footer = () => {
     return (
         <FooterContainer>
