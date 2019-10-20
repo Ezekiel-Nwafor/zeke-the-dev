@@ -22,15 +22,15 @@ const CopyrightParagraph = styled.p`
     display: inline;
 `
 
-const SectionLink = styled.a`
-    
+const StyledLink = styled(Link)`
+    text-decoration-line: none;
 `
 
 const Footer = () => {
     return (
         <FooterContainer>
             <section>
-                <Link to='/contact'>Contact</Link>
+                <StyledLink to='/contact'>Contact</StyledLink>
             </section>
 
             <CopyrightSection>
@@ -38,7 +38,7 @@ const Footer = () => {
             </CopyrightSection>
 
             <section>
-                <Link to='/about'>About</Link>
+                <StyledLink to='/about'>About</StyledLink>
             </section>
         </FooterContainer>
     )
