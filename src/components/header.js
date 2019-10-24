@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const MenuRight = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
 `
 
 const MenuRightFirstLink = styled(Link)`

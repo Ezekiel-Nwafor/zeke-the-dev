@@ -5,7 +5,6 @@ import Layout from '../components/layout'
 const IntroSection = styled.section`
     display: flex;
     align-items: center;
-    margin-top: 75px;
 `
 
 const StyledDiv = styled.div`

@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const FooterContainer = styled.footer`
+
     display: inline-flex;
     justify-content: center;
     align-items: center;
