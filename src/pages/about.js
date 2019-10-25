@@ -1,14 +1,12 @@
 import React from 'react'
-import '../components/header'
 import styled from 'styled-components'
-import Header from '../components/header';
+import Layout from '../components/layout'
 
 const About = () =>{
     return(
-        <div>
-            <Header />
+        <Layout>
             <p>This is my about me page</p>
-        </div>
+        </Layout>
     )
 };
 

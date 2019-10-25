@@ -1,13 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
-import Header from '../components/header'
+import Layout from '../components/layout'
 
 const Blog = () =>{
     return(
-        <div>
-            <Header />
-            <p>This is my blog page!</p>
-        </div>
+        <Layout>
+            <h2>Blog</h2>
+            <p>My blog posts will go here</p>
+        </Layout>
     )
 };
 

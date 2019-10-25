@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from '../components/header'
+import Layout from '../components/layout'
 
 const Contact = () =>{
     return(
-        <div>
-            <Header />
+        <Layout>
             <p>This is my contact me page</p>
-        </div>
+        </Layout>
     )
 };
 

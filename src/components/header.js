@@ -1,63 +1,57 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-const MenuRight = styled.div`
-    display: flex;
+const Nav = styled.nav`
+    display: inline-flex;
     justify-content: space-between;
-    margin-right: 40px;
-`
-
-const MenuRightFirstLink = styled(Link)`
-    text-decoration-line: none;
-`
-const MenuRightMidLink = styled(Link)`
-    text-decoration-line: none;
-    margin-left: 15px;
-    margin-right: 15px;
-`
-
-const MenuRightEndLink = styled(Link)`
-    text-decoration-line: none;
-    margin-right: 40px;
-`
-
-const MenuLeft = styled.div`
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-`
-
-const MenuLeftLink = styled(Link)`
-    text-decoration-line: none;
-`
-
-const StyledHeader = styled.header`
-    height: 10%;
     width: 100%;
-    top: 0;
-    position: fixed;
+`
+const StyledHeader = styled.header`
+    width: 100%;
 `
 
-const StyledNav = styled.nav`
-    display: flex;
-    justify-content: space-between;
+const Ul = styled.ul`
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+`
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+`
+const MenuContainerRight = styled.div`
+    width: 33%;
+`
+
+const Li = styled.li`
+    margin-right: 1.2rem;
 `
 
 const Header = () => {
     return(
         <StyledHeader>
-            <StyledNav>
-                <MenuLeft>
-                    <MenuLeftLink to='/'>Zeke The Dev</MenuLeftLink>
-                </MenuLeft>
+            <Nav>
+                <div>
+                    <StyledLink to='/'>Zeke The Dev</StyledLink>
+                </div>
 
-                <MenuRight>                
-                    <MenuRightFirstLink to='/blog'>Blog</MenuRightFirstLink>
-                    <MenuRightMidLink to='/about'>About</MenuRightMidLink>
-                    <MenuRightEndLink to='/contact'>Let's Talk!</MenuRightEndLink>
-                </MenuRight>
-            </StyledNav>
+                <MenuContainerRight>
+                    <Ul>
+                        <Li>
+                            <StyledLink to='/blog'>Blog</StyledLink>
+                        </Li>
+
+                        <Li>
+                            <StyledLink to='/about'>About</StyledLink>
+                        </Li>
+
+                        <Li>
+                            <StyledLink to='/contact'>Let's Talk!</StyledLink>
+                        </Li>
+                    </Ul>                
+                </MenuContainerRight>
+            </Nav>
         </StyledHeader>
     )
 };
