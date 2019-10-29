@@ -25,23 +25,30 @@ const StyledLink = styled(Link)`
 const Li = styled.li`
     margin-right: 1.2rem;
 `
+const P = styled.p`
+    margin: 0;
+`
 
 const ParagraphContainer = styled.div `
     margin-right: 1.2rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const LinkContainer = styled.div`
     margin-left: 1.2rem;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 `
-
 
 const Footer = () => {
     return (
         <StyledFooter>
             <ParagraphContainer>
-                <p>&#9400; 2019 Ezekiel Nwafor </p>
+                <P>&#9400; 2019 Ezekiel Nwafor </P>
             </ParagraphContainer>
 
             <LinkContainer>
