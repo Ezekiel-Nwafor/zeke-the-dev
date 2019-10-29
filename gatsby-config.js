@@ -9,13 +9,8 @@ module.exports = {
     title: 'Zeke The Dev',
     author: 'Ezekiel Nwafor'
   },
+  
   plugins: [
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
     'gatsby-plugin-styled-components'
   ],
 }
