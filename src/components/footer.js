@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
@@ -45,10 +46,20 @@ const LinkContainer = styled.div`
 `
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    author
+                }
+            }
+        }
+    `)
+
     return (
         <StyledFooter>
             <ParagraphContainer>
-                <P>&#9400; 2019 Ezekiel Nwafor </P>
+                <P>&#9400; 2019 {data.site.siteMetadata.author} </P>
             </ParagraphContainer>
 
             <LinkContainer>
