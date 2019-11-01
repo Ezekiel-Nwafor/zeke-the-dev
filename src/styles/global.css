@@ -9,32 +9,33 @@ body {
 }
 
 /*------ Header Styling ------*/
-h1,h2,h3
-h4,h5,h6{
-    font-family: 'Francois One', Sans-serif;
-}
-
 h1{
     font-size: 2.3em;
+    font-family: 'Francois One', Sans-serif;
 }
 
 h2{
     font-size: 2em;
+    font-family: 'Francois One', Sans-serif;
 }
 
 h3{
     font-size: 1.7em;
+    font-family: 'Francois One', Sans-serif;
 }
 
 h4{
     font-size: 1.4em;
+    font-family: 'Francois One', Sans-serif;
 }
 
 h5{
     font-size: 1.1em;
+    font-family: 'Francois One', Sans-serif;
 }
 
 h6{
     font-size: 0.8em;
+    font-family: 'Francois One', Sans-serif;
 }
 /*------  ------*/
