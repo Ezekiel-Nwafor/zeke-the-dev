@@ -21,6 +21,7 @@ const Ul = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
+    color: #000000;
 `
 
 const Li = styled.li`
