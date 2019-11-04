@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: #000000;
+    color: #FCFCFC;
 `
 
 const Ol = styled.ol`
@@ -21,13 +21,16 @@ const Ol = styled.ol`
     margin: 0;
 `
 
+const Li = styled.li`
+    margin-bottom: 0.5rem;
+`
+
 const P = styled.p`
     margin: 0;
 `
 
-const H3 = styled.h3`
-    margin-bottom: 0.5rem;
-    margin-top: 0;
+const H4 = styled.h4`
+    margin: 0;
 `
 
 const Blog = () =>{
@@ -57,12 +60,12 @@ const Blog = () =>{
                 <Ol>
                     {data.allMarkdownRemark.edges.map((edge) => {
                         return(
-                            <li>
+                            <Li>
                                 <StyledLink to={`/blog/${edge.node.fields.slug}`} >
-                                    <H3>{edge.node.frontmatter.title}</H3>
+                                    <H4>{edge.node.frontmatter.title}</H4>
                                     <P>{edge.node.frontmatter.date}</P>
                                 </StyledLink>
-                            </li>
+                            </Li>
                         )
                     })}
                 </Ol>

@@ -23,7 +23,7 @@ const Ul = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: #000000;
+    color: #FCFCFC;
 `
 
 const Li = styled.li`
