@@ -51,10 +51,6 @@ const Header = () => {
                         <Li>
                             <StyledLink to='/about'>About</StyledLink>
                         </Li>
-
-                        <Li>
-                            <StyledLink to='/contact'>Let's Talk!</StyledLink>
-                        </Li>
                     </Ul>                
                 </div>
             </Nav>

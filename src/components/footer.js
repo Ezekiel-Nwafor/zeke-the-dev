@@ -66,10 +66,6 @@ const Footer = () => {
             <LinkContainer>
                 <Ul>
                     <Li>
-                        <StyledLink to='/contact'>Contact</StyledLink>
-                    </Li>
-
-                    <Li>
                         <StyledLink to='/about'>About</StyledLink>
                     </Li>
                 </Ul>
