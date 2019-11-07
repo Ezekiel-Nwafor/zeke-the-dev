@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
+import Head from '../components/head'
+
 
 const Container = styled.div`
     margin: 1.5rem;
@@ -24,6 +26,7 @@ const A = styled.a`
 const About = () =>{
     return(
         <Layout>
+            <Head title='About'/>
             <Container>
                 <p>Hello and welcome! I am Ezekiel Nwafor (Zeke), I'm a web developer from Massachusetts. I created this site as a means to document and share what I've learned during my journey as a web developer.</p>
 

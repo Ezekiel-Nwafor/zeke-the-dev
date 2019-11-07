@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
+import Head from '../components/head'
 import { graphql } from 'gatsby'
 
 
@@ -26,6 +27,7 @@ const Container = styled.div`
 const blogTemplate = (props) => {
     return(
         <Layout>
+            <Head title={props.data.markdownRemark.frontmatter.title}/>
             <Container>
                 <h3>{props.data.markdownRemark.frontmatter.title}</h3>
                 <p>{props.data.markdownRemark.frontmatter.date}</p>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import Head from '../components/head'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 
@@ -54,6 +55,7 @@ const Blog = () =>{
 
     return(
         <Layout>
+            <Head title='Blog '/>
             <Container>
                 <h2>Blog</h2>
 

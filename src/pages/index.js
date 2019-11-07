@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components';
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 const Container = styled.div`
   height: 100%;
@@ -23,6 +24,7 @@ const P = styled.p`
 const Index = () => {
     return (
         <Layout>
+            <Head title='Home'/>
             <Container>
                 <H1>Welcome!</H1>
                 <P>I am Ezekiel Nwafor (call me Zeke). I'm a developer living in Massachusetts. I like to share the things that I'm learning and doing in web development. </P>
