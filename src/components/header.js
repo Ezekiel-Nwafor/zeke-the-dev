@@ -28,6 +28,11 @@ const StyledLink = styled(Link)`
 
 const Li = styled.li`
     margin-right: 1.2rem;
+
+    :hover{
+        text-decoration: underline;
+    }
+    
 `
 
 const Header = () => {

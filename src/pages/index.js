@@ -12,12 +12,20 @@ const Container = styled.div`
   flex-direction: column;
 `
 
+const H1 = styled.h1`
+    margin: 0.5rem;
+`
+
+const P = styled.p`
+    margin: 0;
+`
+
 const Index = () => {
     return (
         <Layout>
             <Container>
-                <h1>Welcome!</h1>
-                <p>I am Ezekiel Nwafor (call me Zeke). I'm a developer living in Massachusetts. I like to share the things that I'm learning and doing in web development. </p>
+                <H1>Welcome!</H1>
+                <P>I am Ezekiel Nwafor (call me Zeke). I'm a developer living in Massachusetts. I like to share the things that I'm learning and doing in web development. </P>
             </Container>
         </Layout>
     )

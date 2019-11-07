@@ -22,11 +22,16 @@ const Ul = styled.ul`
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: #FCFCFC;
+    
+    :hover{
+        text-decoration: underline;
+    }
 `
 
 const Li = styled.li`
     margin-right: 1.2rem;
 `
+
 const P = styled.p`
     margin: 0;
 `
