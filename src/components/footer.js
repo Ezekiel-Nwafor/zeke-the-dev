@@ -21,12 +21,17 @@ const Ul = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: #000000;
+    color: #FCFCFC;
+    
+    :hover{
+        text-decoration: underline;
+    }
 `
 
 const Li = styled.li`
     margin-right: 1.2rem;
 `
+
 const P = styled.p`
     margin: 0;
 `
@@ -65,10 +70,6 @@ const Footer = () => {
 
             <LinkContainer>
                 <Ul>
-                    <Li>
-                        <StyledLink to='/contact'>Contact</StyledLink>
-                    </Li>
-
                     <Li>
                         <StyledLink to='/about'>About</StyledLink>
                     </Li>

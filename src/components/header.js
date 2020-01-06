@@ -23,11 +23,16 @@ const Ul = styled.ul`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    color: #000000;
+    color: #FCFCFC;
 `
 
 const Li = styled.li`
     margin-right: 1.2rem;
+
+    :hover{
+        text-decoration: underline;
+    }
+    
 `
 
 const Header = () => {
@@ -50,10 +55,6 @@ const Header = () => {
 
                         <Li>
                             <StyledLink to='/about'>About</StyledLink>
-                        </Li>
-
-                        <Li>
-                            <StyledLink to='/contact'>Let's Talk!</StyledLink>
                         </Li>
                     </Ul>                
                 </div>
